@@ -26,7 +26,7 @@ const allowedOrigins = (
   [
     "http://localhost:5173",
     "http://localhost:5174",
-    "https://gpt-clone-final-g7ct.vercel.app",
+    "https://bethel-gpt-clone-final-g7ct.vercel.app",
   ].join(",")
 )
   .split(",")
