@@ -363,6 +363,8 @@ app.use(
 // ======================================================
 
 app.use(errorHandler);
+
+
 // ======================================================
 // Start server
 // ======================================================
@@ -371,12 +373,13 @@ const startServer = async () => {
   try {
     const connection = await db.getConnection();
 
-    console.log("Database connected successfully");
+    console.log("Database connected successfully 🚀");
 
     connection.release();
 
-    app.listen(PORT, () => {
-      console.log(`Server is running on http://localhost:${PORT}`);
+    // ⚡ FIX: Completed the log line and attached '0.0.0.0' for Render routing compatibility
+    app.listen(PORT, '0.0.0.0', () => {
+      console.log(`Server is running smoothly on port ${PORT}`);
     });
   } catch (error) {
     console.error("Database connection failed:", error.message);

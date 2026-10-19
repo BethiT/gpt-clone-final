@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS `gpt-clone-final`;
+CREATE DATABASE IF NOT EXISTS `gpt-clone-final` 
 
 USE `gpt-clone-final`;
 DROP TABLE IF EXISTS conversations;
